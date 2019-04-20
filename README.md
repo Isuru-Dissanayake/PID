@@ -10,3 +10,7 @@ This is a small attempt to write a arduino based PID program for a to solve a li
 4. Programming the robot to complete the task
 
 note : program will depend on the hardware you selected
+
+### PID arduino code explained
+
+8 Ir sensors are used here to identify the white line 
