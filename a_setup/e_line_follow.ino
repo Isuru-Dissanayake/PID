@@ -1,3 +1,7 @@
+/* a counter and a last reading is used here to take the robot back to the line if it goes out of the line */
+
+
+
 int count = 0;
 
 void Line_Follow()
@@ -8,7 +12,6 @@ void Line_Follow()
   {
     if (sens[i] == 0) {count += 1;}
   }
-  //Serial.println(count);
   if (count == 8 && Last_Read == 1)
   {
    while (sens[3] == 0)
@@ -30,7 +33,6 @@ void Line_Follow()
 
   else if (count == 0)
   {
-    //Disenable();
     Brake();
   }
 
